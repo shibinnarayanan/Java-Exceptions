@@ -1,4 +1,4 @@
-package userdefinedException;
+package com.svv.userdefinedException;
 
 public class UserDefinedExceptionsEx1 {
 	
