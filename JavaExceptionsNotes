@@ -1,0 +1,46 @@
+Java Exception
+===========================================
+An exception is an error event that can happen during the execution of a program and disrupts 
+its normal flow. 
+The exception can arise from different kinds of situations such as wrong data entered by the user, 
+hardware failure, network connection failure, etc. 
+Whenever any error occurs while executing a java statement, an exception object is created, and 
+then JRE tries to find an exception handler to handle the exception. If a suitable exception handler 
+is found then the exception object is passed to the handler code to process the exception, known as catching the exception. 
+If no handler is found then the application throws the exception to the runtime environment and JRE terminates the program. 
+Java Exception handling framework is used to handle runtime errors only, compile-time errors are not handled by exception handling 
+framework
+
+Checked (Compile time) and Unchecked (Run time) Exceptions
+===========================================
+
+Checked exceptions-> are those exceptions which are checked at compile. 
+If you do not handle them , you will get compilation error.It forces you to handle this exception in try-catch block.
+ex-> ClassNotFoundException,IOException,FileNotFoundException,SQLException,IllegalAccessException,
+InterruptedException,InstantiationException
+Exception is the superclass of all checked exceptions
+
+Unchecked exceptions-> are the exception which is thrown at run time. 
+These exceptions occur due to programmatic errors and need to be corrected. 
+Compiler is not aware of any such exception
+RuntimeException is the superclass of all unchecked exceptions
+Unchecked exceptions are mostly caused by poor programming, for example,
+NullPointerException when invoking a method on an object reference without making sure that it’s not null
+ex->NullPointerException,ArithmeticException,ArrayIndexOutOfBoundsException,ArrayStoreException,
+UnsupportedOperationException,NoSuchElementException
+
+Throw and Throws
+===========================
+The throw keyword in Java is used for explicitly throwing a single exception.
+This can be from within a method or any block of code. 
+Both checked and unchecked exceptions can be thrown using the throw keyword
+
+When an exception is thrown using the throw keyword, the flow of execution of the program is stopped and 
+the control is transferred to the nearest enclosing try-catch block that matches the type of exception thrown. 
+If no such match is found, the default exception handler terminates the program
+
+
+The throws keyword in Java is used to declare exceptions that can occur during the execution of a program. 
+For any method that can throw exceptions, it is mandatory to use the throws keyword to list the exceptions that can be 
+thrown. The throws keyword provides information about the exceptions to the programmer as well as to the caller of the method that throws the exceptions
+

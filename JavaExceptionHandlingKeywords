@@ -1,0 +1,24 @@
+Java Exception Handling
+
+1 throw: 
+-----------------------
+Sometimes we explicitly want to create an exception object and then throw it to halt the normal 
+processing of the program. The throw keyword is used to throw exceptions to the runtime to handle it.
+2 throws: 
+-----------------------
+When we are throwing any checked exception in a method and not handling it, 
+then we need to use the throws keyword in the method signature to let the caller program know 
+the exceptions that might be thrown by the method. The caller method might handle these exceptions
+or propagate them to its caller method using the throws keyword. 
+We can provide multiple exceptions in the throws clause and it can be used with the main() method also.
+3 try-catch:
+----------------------- 
+We use try-catch block for exception handling in our code. try is the start of the block and catch 
+is at the end of the try block to handle the exceptions. We can have multiple catch blocks with 
+a try and try-catch blocks can be nested also. catch block requires a parameter that should be of type Exception.
+4 finally: 
+-----------------------
+The finally block is optional and can be used only with a try-catch block. 
+Since exception halts the process of execution, we might have some resources open that will 
+not get closed, so we can use the finally block. The finally block gets executed always,
+ whether an exception occurs or not.

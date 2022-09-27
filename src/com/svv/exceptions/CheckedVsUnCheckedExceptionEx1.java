@@ -2,7 +2,7 @@ package com.svv.exceptions;
 
 public class CheckedVsUnCheckedExceptionEx1 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		 
 		 /* checked exception example */
 		//---------------------------------------------------------
@@ -11,7 +11,11 @@ public class CheckedVsUnCheckedExceptionEx1 {
 		 } catch (ClassNotFoundException e) {
 		  System.out.println("Class was not found.");
 		 }
+		 finally {
+			System.out.println("Finally block will execute always irrespective of exceptoin handling");
+		}
 		 
+
 			/* see the example for compile time exception after uncomment below code
 			 * Unhandled exception type ClassNotFoundException...need to use try catch block
 			 * Class.forName("com.mcnz.Example");
