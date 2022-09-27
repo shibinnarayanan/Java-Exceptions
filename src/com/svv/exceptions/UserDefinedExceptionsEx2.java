@@ -1,4 +1,4 @@
-package com.svv.userdefinedException;
+package com.svv.exceptions;
 
 import java.util.Scanner;
 
