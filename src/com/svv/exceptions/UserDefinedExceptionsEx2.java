@@ -12,12 +12,16 @@ public class UserDefinedExceptionsEx2 {
 		
 		int num = scn.nextInt();
 		
+		
 		try {
 			SampleException.validateInput(num);
-		} catch (InvalidInputException e) {
+		} 
+		catch (InvalidInputException e) {
 		
 			System.out.println("Caught Exception - Input is greater than 100");
 		}
+		
+		System.out.println("exectued...........");
 
 	}
 }
